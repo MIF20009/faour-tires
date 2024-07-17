@@ -62,3 +62,11 @@ body {
     color: #F5F5F5;
     font-family: Arial, Helvetica, sans-serif;
 }
+.phoneNum{
+    color: black;
+    text-decoration: none;
+}
+.phoneNum:hover{
+    color: black;
+    text-decoration: none;
+}
