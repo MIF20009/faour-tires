@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faour Tires</title>
-     <!-- Disable auto-detection of phone numbers on mobile devices -->
-     <meta name="format-detection" content="telephone=no">
+    <!-- Disable auto-detection of phone numbers on mobile devices -->
+    <meta name="format-detection" content="telephone=no">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome CSS -->
@@ -15,21 +15,33 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg nav-bar fixed-top">
+        <a class="navbar-brand" href="index.html">Faour Tires</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Branches</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="services.html">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
     <div class="container">
         <div class="logo">
-                <div class="logoImage">
-                    <img src="Images/FaourLogo.png" class="logoPic" alt="Faour Tires">
-                </div>
-                <div class="text-center my-4">
-                    <i class="fab fa-facebook-f mr-2 icon-facebook"></i>
-                    <a href="https://facebook.com/profile.php?id=61560529715204" target="_blank" class="text-decoration-none mr-3">
-                        <span>Faour Tires</span>
-                    </a>
-                    <i class="fab fa-instagram mr-2 icon-instagram"></i>
-                    <a href="https://www.instagram.com/faourtires.lb" target="_blank" class="text-decoration-none">
-                        <span class="icon-instagram-text">Faour Tires</span>
-                    </a>
-                </div>
+            <div class="logoImage">
+                <img src="Images/FaourLogo.png" class="logoPic" alt="Faour Tires">
+            </div>
+            
         </div>
         <h1 class="text-center my-4" style="color:#f1f1f1;">Our Branches</h1>
         <div class="row">
@@ -39,8 +51,8 @@
                     <img src="Images/Sour.jpeg" class="card-img-top" alt="Sour">
                     <div class="card-body">
                         <h5 class="card-title">Sour</h5>
-                            <i class="bi bi-geo-alt-fill mr-2 icon-location"></i>
-                            <span><a href="https://www.google.com/maps?q=33.315964,35.241055" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
+                        <i class="bi bi-geo-alt-fill mr-2 icon-location"></i>
+                        <span><a href="https://www.google.com/maps?q=33.315964,35.241055" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
                         <i class="bi bi-telephone-fill icon-phone"></i>
                         <span class="phoneNum">&nbsp;&nbsp;07 350 666</span><br>
                         <i class="bi bi-whatsapp mr-2 icon-whatsapp"></i>
@@ -55,9 +67,9 @@
                 <div class="card mb-4">
                     <img src="Images/SaintTherez.jpeg" class="card-img-top" alt="Saint Therese">
                     <div class="card-body">
-                        <h5 class="card-title"> Saint Therese</h5>
+                        <h5 class="card-title">Saint Therese</h5>
                         <i class="bi bi-geo-alt-fill mr-2 icon-location"></i>
-                            <span><a href="https://www.google.com/maps?q=33.848335, 35.524246" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
+                        <span><a href="https://www.google.com/maps?q=33.848335,35.524246" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
                         <i class="bi bi-telephone-fill icon-phone"></i>
                         <span class="phoneNum">&nbsp;&nbsp;05 467 772</span><br>
                         <i class="bi bi-whatsapp mr-2 icon-whatsapp"></i>
@@ -74,7 +86,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Der Al Zahrani</h5>
                         <i class="bi bi-geo-alt-fill mr-2 icon-location"></i>
-                            <span><a href="https://www.google.com/maps?q=33.433582, 35.440006" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
+                        <span><a href="https://www.google.com/maps?q=33.433582,35.440006" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
                         <i class="bi bi-telephone-fill icon-phone"></i>
                         <span class="phoneNum">&nbsp;&nbsp;07 532 393</span><br>
                         <i class="bi bi-whatsapp mr-2 icon-whatsapp"></i>
@@ -91,7 +103,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Ozaai</h5>
                         <i class="bi bi-geo-alt-fill mr-2 icon-location"></i>
-                            <span><a href="https://www.google.com/maps?q=33.831573, 35.484707" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
+                        <span><a href="https://www.google.com/maps?q=33.831573,35.484707" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
                         <i class="bi bi-telephone-fill icon-phone"></i>
                         <span class="phoneNum">&nbsp;&nbsp;01 455 933</span><br>
                         <i class="bi bi-whatsapp mr-2 icon-whatsapp"></i>
@@ -108,7 +120,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Berj Kalaway</h5>
                         <i class="bi bi-geo-alt-fill mr-2 icon-location"></i>
-                            <span><a href="https://www.google.com/maps?q=33.26885,35.41992" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
+                        <span><a href="https://www.google.com/maps?q=33.26885,35.41992" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
                         <i class="bi bi-telephone-fill icon-phone"></i>
                         <span class="phoneNum">&nbsp;&nbsp;70 356 645 - 78 859 157</span><br>
                         <i class="bi bi-whatsapp mr-2 icon-whatsapp"></i>
@@ -125,7 +137,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Maaroub</h5>
                         <i class="bi bi-geo-alt-fill mr-2 icon-location"></i>
-                            <span><a href="https://www.google.com/maps?q=33.28646,35.33353" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
+                        <span><a href="https://www.google.com/maps?q=33.28646,35.33353" target="_blank" class="d-inline-flex align-items-center text-decoration-none">Location</a></span><br>
                         <i class="bi bi-telephone-fill icon-phone"></i>
                         <span class="phoneNum">&nbsp;&nbsp;07 400 666</span><br>
                         <i class="bi bi-whatsapp mr-2 icon-whatsapp"></i>
@@ -137,12 +149,18 @@
             </div>
             <!-- Repeat for other branches -->
         </div>
-        <footer class="text-center mt-4">
+       
+    </div>
+    <div class="full-bottom-section">
+        <footer class="footer-color text-center mt-4">
             <blockquote class="blockquote">
                 <p class="mb-0 footer-text">"Quality tires for a smooth journey."</p>
             </blockquote>
+            <p class="follow-text footer-text">Follow us on: 
+                <a href="https://www.instagram.com/faourtires.lb" target="_blank"><i class="bi bi-instagram icon-instagram"></i></a> 
+                <a href="https://facebook.com/profile.php?id=61560529715204" target="_blank"><i class="bi bi-facebook icon-facebook"></i></a>
+            </p>
         </footer>
-        
     </div>
     <!-- Bootstrap JS and dependencies -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

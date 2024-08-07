@@ -5,14 +5,19 @@
 }
 .card{
     background-color: #bab9b9;
+    height: 350px;
 }
 .card-title{
     font-weight: bold;
 }
+.logoImage{
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically if needed */
+}
 .logoPic {
     width: 200px;
     height:200px;
-    margin-left: 90px;
 }
 .description{
     color: #F5F5F5;
@@ -28,10 +33,18 @@
 .custom-link:hover {
     color: darkgreen; 
 }
-
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
 body {
     background-color: rgb(31, 30, 30);  
     background-size: cover;
+    min-height: 100vh; /* Ensure the body takes at least full viewport height */
+    margin: 0; /* Remove default margin */
+    padding-top: 56px; /* Adjust based on the height of your navbar */
 }
 .icon-location{
     color: red;
@@ -75,4 +88,80 @@ a[href^="tel"] {
     text-decoration: none;
     pointer-events: none; 
     cursor: default; 
+}
+.nav-bar {
+    background-color: #343a40; /* Dark background */
+}
+
+.nav-bar .nav-link,
+.nav-bar .navbar-brand {
+    color: #f5f5f5; /* Light text color */
+}
+
+.nav-bar .nav-link:hover {
+    color: #bab9b9; /* Hover text color */
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28 255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.footer-color{
+    background-color:#343a40;
+    
+}
+.full-bottom-section {
+    background-color: #343a40; /* Match navbar background */
+    width: 100%; /* Ensure full width */
+    position: relative; /* Container should have relative positioning */
+    overflow: hidden; /* Prevents overflow and scrollbars */
+    margin: 0; /* Ensure no margin is affecting width */
+    padding: 0; /* Ensure no padding is affecting width */
+    color: white; /* Ensure text color is white */
+}
+
+.footer-color {
+    background-color: #343a40; /* Match navbar background */
+    padding: 1rem; /* Add some padding for better spacing */
+}
+
+.footer-text {
+    color: #f1f1f1; /* Ensure footer text color contrasts well with background */
+}
+
+.service-icon {
+    font-size: 2rem; /* Adjust icon size */
+    color: #000; /* Adjust icon color */
+}
+.service-item {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.service-title {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    color: #000; /* Adjust title color */
+    font-weight: bold;
+}
+.service-description {
+    font-size: 1rem;
+    color: #000; /* Adjust description color */
+}
+.locations{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.container-about{
+    color:#f5f5f5;
+}
+.brand-logo {
+    width: 100%;
+    height: 100px;
+    object-fit: contain; /* Ensures the aspect ratio is maintained */
+}
+.brand-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.brand-container div {
+    margin: 10px;
 }
