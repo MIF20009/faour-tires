@@ -1,100 +1,19 @@
-.card-img-top {
-    width: 100%;
-    height: 200px; 
-    object-fit: cover;
+/*body style*/
+body, html {
+    margin: 0; /* Remove default margins from body and html */
+    padding: 0; /* Remove default padding from body and html */
 }
-.card{
-    background-color: #bab9b9;
-    height: 350px;
-}
-.card-title{
-    font-weight: bold;
-}
-.logoImage{
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically if needed */
-}
-.logoPic {
-    width: 200px;
-    height:200px;
-}
-.description{
-    color: #F5F5F5;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-left: 140px;
-    font-size: 20px;
-    margin-bottom: 50px;
-    font-weight: bold;
-}
-.custom-link{
-    color: green;
-}
-.custom-link:hover {
-    color: darkgreen; 
-}
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
-}
-body {
-    background-color: rgb(31, 30, 30);  
-    background-size: cover;
-    min-height: 100vh; /* Ensure the body takes at least full viewport height */
-    margin: 0; /* Remove default margin */
-    padding-top: 56px; /* Adjust based on the height of your navbar */
-}
-.icon-location{
-    color: red;
-}
-.icon-whatsapp{
-    color: green;
-}
-.icon-phone{
-    color: black;
-}
-.card-title{
-    font-family: Arial, Helvetica, sans-serif;
-}
-.icon-facebook {
-    color: #4267B2;
-}
-.icon-instagram {
-    color: #C13584; 
-}
-.icon-instagram-text {
-    color: #C13584; 
-    text-decoration: none; 
-}
-.icon-instagram-text:hover {
-    color: #E1306C; 
-}
-.footer-text{
-    color: #F5F5F5;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.phoneNum{
-    color: black;
-    text-decoration: none;
-}
-.phoneNum:hover{
-    color: black;
-    text-decoration: none;
-}
-a[href^="tel"] {
-    color: inherit;
-    text-decoration: none;
-    pointer-events: none; 
-    cursor: default; 
-}
+
+
+
+
+/*navbar style*/
 .nav-bar {
     background-color: #343a40; /* Dark background */
 }
 
 .nav-bar .nav-link,
-.nav-bar .navbar-brand {
+.nav-bar {
     color: #f5f5f5; /* Light text color */
 }
 
@@ -104,29 +23,252 @@ a[href^="tel"] {
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28 255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
 }
-.footer-color{
-    background-color:#343a40;
-    
+.navbar-brand {
+    display: flex;
+    align-items: center; 
+    padding: 0;
 }
-.full-bottom-section {
-    background-color: #343a40; /* Match navbar background */
-    width: 100%; /* Ensure full width */
-    position: relative; /* Container should have relative positioning */
-    overflow: hidden; /* Prevents overflow and scrollbars */
-    margin: 0; /* Ensure no margin is affecting width */
-    padding: 0; /* Ensure no padding is affecting width */
-    color: white; /* Ensure text color is white */
+.logoPic {
+    height: 80px; /* Base size */
+    max-width: 80px; /* Ensure it scales properly */   
+    transform: scale(1.5); /* Zoom in by 1.5 times */
+    transform-origin: center; /* Zoom from the center of the image */
 }
 
-.footer-color {
-    background-color: #343a40; /* Match navbar background */
-    padding: 1rem; /* Add some padding for better spacing */
+/*---------------------INDEX STYLE----------------------------*/
+
+/*quote-section style*/
+/*quote-section style*/
+.quote-section {
+    position: relative;
+    background-color: black;
+    padding: 0; /* Adjust if needed */
+    margin: 0 auto; /* Center the section */
+    text-align: center; /* Center text inside */
+    overflow: hidden; /* Hide any overflow */
+    background-image: url('Images/quote-section-background.jpeg'); /* Set the background image */
+    background-size: cover; /* Cover the entire div with the image */
+    background-position: center; /* Center the image in the div */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
 }
 
-.footer-text {
-    color: #f1f1f1; /* Ensure footer text color contrasts well with background */
+/* Overlay for shading the background image */
+.quote-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    z-index: 0; /* Place the overlay behind the content */
 }
 
+.quote-icon-div {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    position: relative; /* Ensure content is above the overlay */
+    z-index: 1;
+}
+
+.quote-icon {
+    color: white;
+    font-size: 60px;
+    position: relative;
+    z-index: 1; /* Ensure icon is above the overlay */
+}
+
+.quote-p-div {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 1; /* Ensure content is above the overlay */
+}
+
+.quote-p {
+    color: white;
+    z-index: 1; /* Ensure text is above the overlay */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    position: relative; /* Ensure text is above the overlay */
+}
+
+
+
+
+/*about us style*/
+/* Adjustments to ensure proper centering */
+.about-us-section {
+    text-align: center; /* Center-align all text and inline-block elements */
+    padding-bottom: 30px;
+}
+.about-us-title-div {
+    display: inline-block; /* Adjust width based on content */
+    background-color: rgb(196, 3, 3);
+    margin: 30px auto 20px; /* Center the div horizontally */
+    padding: 10px; /* Optional padding to create space around the text */
+}
+.about-us-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center text within the div */
+}
+.about-us-image-div{
+    margin-top: 15px;
+}
+.about-us-image{
+    width: 330px;
+    height: 220px;
+}
+.about-us-p-div{
+    margin-top: 15px;
+}
+
+
+
+/*services style*/
+/* Adjustments to ensure proper centering */
+.services-section {
+    text-align: center; /* Center-align all text and inline-block elements */
+    padding-bottom: 30px;
+    background-color: black;
+}
+.services-title-div {
+    display: inline-block; /* Adjust width based on content */
+    background-color: white;
+    margin: 30px auto 20px; /* Center the div horizontally */
+    padding: 10px; /* Optional padding to create space around the text */
+}
+.services-title {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center text within the div */
+}
+.services-image-div{
+    margin-top: 15px;
+}
+.services-image{
+    width: 330px;
+    height: 220px;
+}
+.services-p-div{
+    margin-top: 15px;
+    color: white;
+}
+.service-section-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+    background-color: white; /* Primary color */
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+
+
+
+
+/*services style*/
+/* Adjustments to ensure proper centering */
+.branches-section {
+    text-align: center; /* Center-align all text and inline-block elements */
+    padding-bottom: 30px;
+    background-color: rgb(196, 3, 3);
+}
+.branches-title-div {
+    display: inline-block; /* Adjust width based on content */
+    background-color: black;
+    margin: 30px auto 20px; /* Center the div horizontally */
+    padding: 10px; /* Optional padding to create space around the text */
+}
+.branches-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center text within the div */
+}
+.branches-image-div{
+    margin-top: 15px;
+}
+.branches-image{
+    width: 330px;
+    height: 220px;
+}
+.branches-p-div{
+    margin-top: 15px;
+    color: white;
+}
+.branches-section-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    background-color: black; /* Primary color */
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+
+
+/*brands section style*/
+.brands-section{
+    text-align: center; /* Center-align all text and inline-block elements */
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.brands-title-div {
+    display: inline-block; /* Adjust width based on content */
+    background-color: white;
+    margin: 30px auto 20px; /* Center the div horizontally */
+    padding: 10px; /* Optional padding to create space around the text */
+}
+.brands-title {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center text within the div */
+}
+
+
+
+/*---------------------CARDS STYLE----------------------------*/
+h1 {
+    margin-bottom: 1.5rem;
+    color: #f1f1f1;
+}
+.card-img-top {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
+}
+.card{
+    background-color: #d6d5d5;
+    height: 350px;
+}
+.card-title{
+    font-weight: bold;
+}
 .service-icon {
     font-size: 2rem; /* Adjust icon size */
     color: #000; /* Adjust icon color */
@@ -152,16 +294,71 @@ a[href^="tel"] {
 .container-about{
     color:#f5f5f5;
 }
-.brand-logo {
-    width: 100%;
-    height: 100px;
-    object-fit: contain; /* Ensures the aspect ratio is maintained */
+.icon-location{
+    color: red;
 }
-.brand-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.icon-whatsapp{
+    color: green;
 }
-.brand-container div {
-    margin: 10px;
+.custom-link{
+    color: green;
+}
+.icon-phone{
+    color: black;
+}
+.phoneNum{
+    color: black;
+    text-decoration: none;
+}
+.phoneNum:hover{
+    color: black;
+    text-decoration: none;
+}
+a[href^="tel"] {
+    color: inherit;
+    text-decoration: none;
+    pointer-events: none; 
+    cursor: default; 
+}
+
+
+
+
+
+/*-----------------------FOOTER STYLE----------------------*/
+.icon-facebook {
+    color: #4267B2;
+}
+.icon-instagram {
+    color: #C13584; 
+}
+.icon-instagram-text {
+    color: #C13584; 
+    text-decoration: none; 
+}
+.footer-text{
+    color: #F5F5F5;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-color{
+    background-color:#343a40;
+    
+}
+.full-bottom-section {
+    background-color: #343a40; /* Match navbar background */
+    width: 100%; /* Ensure full width */
+    position: relative; /* Container should have relative positioning */
+    overflow: hidden; /* Prevents overflow and scrollbars */
+    margin: 0; /* Ensure no margin is affecting width */
+    padding: 0; /* Ensure no padding is affecting width */
+    color: white; /* Ensure text color is white */
+}
+
+.footer-color {
+    background-color: #343a40; /* Match navbar background */
+    padding: 1rem; /* Add some padding for better spacing */
+}
+
+.footer-text {
+    color: #f1f1f1; /* Ensure footer text color contrasts well with background */
 }

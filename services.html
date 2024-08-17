@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,35 +15,31 @@
     <!-- Custom CSS -->
     <link href="styles.css" rel="stylesheet">
 </head>
-<body>
+<body style="background-color: black;">
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg nav-bar fixed-top">
-        <a class="navbar-brand" href="index.html">Faour Tires</a>
+        <a class="navbar-brand" href="index.html">
+            <img src="Images/FaourLogo.png" class="logoPic" alt="Faour Tires">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.html">Branches</a>
+                    <a class="nav-link" href="index.html">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="services.html">Services</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
+                    <a class="nav-link" href="branches.html"> Branches</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <div class="container">
-        <div class="logo">
-            <div class="logoImage">
-                <img src="Images/FaourLogo.png" class="logoPic" alt="Faour Tires">
-            </div>
-            
-        </div>
+    <div class="container" style="padding-top: 80px;">
         
         <div class="container my-5">
             <h1 class="text-center mb-4" style="color:#f1f1f1">Our Services</h1>
@@ -95,7 +92,7 @@
                             <p class="card-text">Professional oil change services for vehicle motors, enhancing engine performance and longevity.</p><br>
                             <p class="locations">This service is available at:</p>
                             <i class="bi bi-geo-alt-fill mr-2 icon-location"></i>
-                            <span>Der AL Zahrani - Ozaai - Berj Kalaway</span>
+                            <span>Der Al Zahrani - Ozaai - Berj Kalaway</span>
                         </div>
                     </div>
                 </div>
@@ -136,12 +133,18 @@
     <div class="full-bottom-section">
         <footer class="footer-color text-center mt-4">
             <blockquote class="blockquote">
-                <p class="mb-0 footer-text">"Quality tires for a smooth journey."</p>
+                <p class="mb-0 footer-text">FOLLOW US ON</p>
             </blockquote>
-            <p class="follow-text footer-text">Follow us on: 
-                <a href="https://www.instagram.com/faourtires.lb" target="_blank"><i class="bi bi-instagram icon-instagram"></i></a> 
-                <a href="https://facebook.com/profile.php?id=61560529715204" target="_blank"><i class="bi bi-facebook icon-facebook"></i></a>
-            </p>
+            <div class="text-center my-4">
+                <i class="fab fa-facebook-f mr-2 icon-facebook"></i>
+                <a href="https://facebook.com/profile.php?id=61560529715204" target="_blank" class="text-decoration-none mr-3">
+                    <span>Faour Tires</span>
+                </a>
+                <i class="fab fa-instagram mr-2 icon-instagram"></i>
+                <a href="https://www.instagram.com/faourtires.lb" target="_blank" class="text-decoration-none">
+                    <span class="icon-instagram-text">Faour Tires</span>
+                </a>
+            </div>
         </footer>
     </div>
     <!-- Bootstrap JS and dependencies -->
