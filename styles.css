@@ -1,8 +1,13 @@
-/*body style*/
-body, html {
-    margin: 0; /* Remove default margins from body and html */
-    padding: 0; /* Remove default padding from body and html */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+html, body {
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
 
 
 
@@ -28,73 +33,29 @@ body, html {
     align-items: center; 
     padding: 0;
 }
-.logoPic {
-    height: 80px; /* Base size */
-    max-width: 80px; /* Ensure it scales properly */   
-    transform: scale(1.5); /* Zoom in by 1.5 times */
-    transform-origin: center; /* Zoom from the center of the image */
+.navbar-p{
+    color: white;
+    margin-top: 10px;
 }
 
 /*---------------------INDEX STYLE----------------------------*/
 
-/*quote-section style*/
-/*quote-section style*/
-.quote-section {
-    position: relative;
-    background-color: black;
+/*logo-section style*/
+/*logo-section style*/
+.logo-section {
     padding: 0; /* Adjust if needed */
     margin: 0 auto; /* Center the section */
-    text-align: center; /* Center text inside */
-    overflow: hidden; /* Hide any overflow */
-    background-image: url('Images/quote-section-background.jpeg'); /* Set the background image */
+    background-color: black;
     background-size: cover; /* Cover the entire div with the image */
     background-position: center; /* Center the image in the div */
     background-repeat: no-repeat; /* Prevent the image from repeating */
+    width: 100vw;
+}
+.logo-section-pic{
+    width: 500px;
+    height: 200px;
 }
 
-/* Overlay for shading the background image */
-.quote-section::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
-    z-index: 0; /* Place the overlay behind the content */
-}
-
-.quote-icon-div {
-    display: flex;
-    justify-content: center;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    position: relative; /* Ensure content is above the overlay */
-    z-index: 1;
-}
-
-.quote-icon {
-    color: white;
-    font-size: 60px;
-    position: relative;
-    z-index: 1; /* Ensure icon is above the overlay */
-}
-
-.quote-p-div {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 1; /* Ensure content is above the overlay */
-}
-
-.quote-p {
-    color: white;
-    z-index: 1; /* Ensure text is above the overlay */
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 30px;
-    position: relative; /* Ensure text is above the overlay */
-}
 
 
 
@@ -104,6 +65,7 @@ body, html {
 .about-us-section {
     text-align: center; /* Center-align all text and inline-block elements */
     padding-bottom: 30px;
+    width: 100vw;
 }
 .about-us-title-div {
     display: inline-block; /* Adjust width based on content */
@@ -128,6 +90,10 @@ body, html {
 .about-us-p-div{
     margin-top: 15px;
 }
+.about-us-p{
+    max-width: 90%;
+    margin-left: 18px;
+}
 
 
 
@@ -137,6 +103,7 @@ body, html {
     text-align: center; /* Center-align all text and inline-block elements */
     padding-bottom: 30px;
     background-color: black;
+    width: 100vw;
 }
 .services-title-div {
     display: inline-block; /* Adjust width based on content */
@@ -162,6 +129,10 @@ body, html {
     margin-top: 15px;
     color: white;
 }
+.services-p{
+    max-width: 90%;
+    margin-left: 18px;
+}
 .service-section-button {
     display: inline-block;
     padding: 10px 20px;
@@ -175,6 +146,9 @@ body, html {
     text-decoration: none;
     transition: background-color 0.3s;
 }
+.service-section-button:visited{
+    color: black;
+}
 
 
 
@@ -187,6 +161,7 @@ body, html {
     text-align: center; /* Center-align all text and inline-block elements */
     padding-bottom: 30px;
     background-color: rgb(196, 3, 3);
+    width: 100vw;
 }
 .branches-title-div {
     display: inline-block; /* Adjust width based on content */
@@ -212,6 +187,10 @@ body, html {
     margin-top: 15px;
     color: white;
 }
+.branches-p{
+    max-width: 90%;
+    margin-left: 18px;
+}
 .branches-section-button {
     display: inline-block;
     padding: 10px 20px;
@@ -225,6 +204,9 @@ body, html {
     text-decoration: none;
     transition: background-color 0.3s;
 }
+.branches-section-button:visited{
+    color: white;
+}
 
 
 
@@ -235,6 +217,7 @@ body, html {
     background-color: black;
     padding-top: 30px;
     padding-bottom: 30px;
+    width: 100vw;
 }
 .brands-title-div {
     display: inline-block; /* Adjust width based on content */
@@ -346,7 +329,7 @@ a[href^="tel"] {
 }
 .full-bottom-section {
     background-color: #343a40; /* Match navbar background */
-    width: 100%; /* Ensure full width */
+    width: 100vw;
     position: relative; /* Container should have relative positioning */
     overflow: hidden; /* Prevents overflow and scrollbars */
     margin: 0; /* Ensure no margin is affecting width */
@@ -362,3 +345,7 @@ a[href^="tel"] {
 .footer-text {
     color: #f1f1f1; /* Ensure footer text color contrasts well with background */
 }
+
+
+
+
